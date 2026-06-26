@@ -35,7 +35,7 @@
 
 /* ============ BASE ============ */
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+html{scroll-behavior:smooth}
 body{
   font-family:var(--d-body);
   background:var(--paper);
@@ -53,6 +53,8 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 .sec{position:relative;padding:clamp(96px,14vh,180px) 0;color:var(--fg);scroll-snap-align:start;scroll-margin-top:0}
 /* slides: cada camada cabe inteira na tela, conteúdo centralizado (só em desktop, onde a navegação por slide atua) */
 @media(min-width:821px){
+  /* slides com snap só no desktop — no mobile o scroll é livre/nativo */
+  html{scroll-snap-type:y proximity}
   #l1,#l2,#l3,#l4,#l5,#response{
     min-height:100vh;display:flex;flex-direction:column;justify-content:center;
     padding-top:clamp(48px,7vh,80px);padding-bottom:clamp(48px,7vh,80px);
@@ -970,7 +972,7 @@ buildStops();
   }
   /* teclado */
   addEventListener("keydown",function(e){
-    if(!bootDone || e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+    if(!bootDone || innerWidth<=820 || e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
     var tg=e.target;
     if(tg && tg.closest && tg.closest("a,button,input,textarea,select,[contenteditable]")) return;
     var k=e.key;
@@ -982,7 +984,7 @@ buildStops();
   /* scroll do mouse/trackpad: um gesto = um salto (mesmo efeito da setinha) */
   if(!RM){
     addEventListener("wheel",function(e){
-      if(!bootDone) return;
+      if(!bootDone || innerWidth<=820) return;   /* mobile/estreito: scroll nativo livre */
       e.preventDefault();
       if(locked()){ relock(150); return; }   /* segura o lock durante a inércia do trackpad */
       if(Math.abs(e.deltaY)<6) return;
