@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="{{lang}}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{{head}}}
+<script>(function(d){d.className="js";try{if(localStorage.getItem("td-paused")==="1")d.classList.add("paused");if(sessionStorage.getItem("td-booted")==="1")d.classList.add("booted")}catch(e){}})(document.documentElement)</script>
+<link rel="preload" href="{{base}}assets/fonts/old-standard-tt-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{base}}assets/fonts/source-serif-4-normal-400-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{base}}assets/css/site.css">
+<script src="{{base}}assets/js/site.js" defer></script>
+<script src="{{base}}assets/js/eggs.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+{{{defs}}}
+<div class="frame" aria-hidden="true"><i class="reg r-tl"></i><i class="reg r-tr"></i><i class="reg r-bl"></i><i class="reg r-br"></i></div>
+
+<div id="boot" aria-hidden="true">
+  <div class="boot-frame"><i class="bf bf-t"></i><i class="bf bf-r"></i><i class="bf bf-b"></i><i class="bf bf-l"></i></div>
+  <p class="boot-hint">{{boot.skip}}</p>
+  <p class="boot-pct">0</p>
+  <div class="boot-log"><span>{{boot.l1}}</span><span>{{boot.l2}}</span><span>{{boot.l3}}</span><span class="ok">{{boot.l4}}</span></div>
+</div>
+
+<header class="strip">
+  <a class="mark" href="#top" aria-label="Thiago Diniz">{{{mono}}}</a>
+  <p class="strip-title">{{strip.title}}</p>
+  <p class="strip-sheet"><span>{{strip.sheet}}</span> <b class="sheet-n">1</b> <span>{{strip.of}}</span> <b>10</b></p>
+  <nav class="strip-nav" aria-label="{{nav.label}}">
+    <a href="#fig-2">{{nav.spec}}</a><a href="#cases">{{nav.cases}}</a><a href="#history">{{nav.hist}}</a><a href="#claims">{{nav.claims}}</a>
+  </nav>
+  <a class="strip-lang" href="{{lang.otherHref}}" hreflang="{{lang.otherCode}}" lang="{{lang.otherCode}}" title="{{lang.otherName}}" aria-label="{{lang.label}}: {{lang.otherName}}">{{lang.other}}</a>
+  <button class="strip-pause" type="button" aria-pressed="false" data-off="{{pause.off}}" data-on="{{pause.on}}" title="{{pause.off}}">{{{icon.pause}}}{{{icon.play}}}<span class="vh">{{pause.off}}</span></button>
+  <a class="strip-cv" href="{{base}}assets/cv/thiago-diniz-cv.pdf" download="Thiago-Diniz-CV.pdf" title="{{cv.title}}">{{{icon.down}}}<span>{{btn.cv}}</span></a>
+</header>
+
+<main id="main">
+
+<section class="sheet hero" id="top" data-sheet="1" aria-labelledby="name">
+  <div class="hero-main">
+    <h1 class="name" id="name"><span class="vh">{{h1.sr}}</span><span class="row" aria-hidden="true">THIAGO</span><span class="row" aria-hidden="true">DINIZ</span></h1>
+    <p class="tag">{{tag}}</p>
+    <p class="abstract"><b class="run">{{abs.run}}</b> {{abs}}</p>
+    <div class="actions">
+      <a class="btn btn-ink" href="{{base}}assets/cv/thiago-diniz-cv.pdf" download="Thiago-Diniz-CV.pdf">{{{icon.down}}}<span>{{cta.cv}}</span></a>
+      <a class="btn" href="#fig-2"><span>{{cta.fig}}</span>{{{icon.arrow}}}</a>
+    </div>
+    <p class="links"><a href="mailto:thiagof.vdiniz@gmail.com">{{link.mail}}</a><a href="https://www.linkedin.com/in/thiago-diniz-dev" rel="me noopener" target="_blank">LinkedIn</a><a href="https://github.com/thiago-fv-diniz" rel="me noopener" target="_blank">GitHub</a></p>
+  </div>
+  <aside class="inventor">
+    <dl>
+      <div class="dl-title"><dt>{{title.label}}</dt><dd>{{strip.title}}</dd></div>
+      <div><dt>{{inv.label}}</dt><dd>{{inv.value}}</dd></div>
+      <div><dt>{{role.label}}</dt><dd>{{role.value}}</dd></div>
+      <div><dt>{{base.label}}</dt><dd>{{base.value}}</dd></div>
+      <div><dt>{{since.label}}</dt><dd>{{since.value}}</dd></div>
+      <div><dt>{{now.label}}</dt><dd>{{now.value}}</dd></div>
+      <div><dt>{{mail.label}}</dt><dd><a href="mailto:thiagof.vdiniz@gmail.com">thiagof.vdiniz<wbr>@gmail.com</a></dd></div>
+    </dl>
+  </aside>
+  <figure class="hero-fig" data-scope>
+    {{{fig1}}}
+    <figcaption>{{fig1.caption}}</figcaption>
+  </figure>
+  <aside class="refs" data-scope-of="top" aria-labelledby="refs-h">
+    <h2 class="refs-h" id="refs-h">{{refs.h}}</h2>
+    <ol class="reflist">
+      <li data-ref="1"><b>1</b>{{ref.1}}</li>
+      <li data-ref="2"><b>2</b>{{ref.2}}</li>
+      <li data-ref="10"><b>10</b>{{ref.10}}</li>
+      <li data-ref="20"><b>20</b>{{ref.20}}</li>
+      <li data-ref="24"><b>24</b>{{ref.24}}</li>
+      <li data-ref="30"><b>30</b>{{ref.30}}</li>
+      <li data-ref="32"><b>32</b>{{ref.32}}</li>
+      <li data-ref="40"><b>40</b>{{ref.40}}</li>
+      <li data-ref="42"><b>42</b>{{ref.42}}</li>
+      <li data-ref="50"><b>50</b>{{ref.50}}</li>
+    </ol>
+  </aside>
+  <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 1 {{strip.of}} 10</p>
+</section>
+
+<section class="sheet fig2" id="fig-2" data-sheet="2" aria-labelledby="fig2-h">
+  <div class="fig2-stage" data-scope><div class="fig2-sticky">{{{fig2}}}<div class="fig2-seal" aria-hidden="true">{{{seal2}}}</div></div></div>
+  <div class="spec">
+    <h2 id="fig2-h">{{fig2.h}}</h2>
+    <div class="para" data-step="0"><p><span class="pn">[0001]</span> {{p.0001}}</p></div>
+    <div class="para" data-step="1" data-part="10"><h3><span class="pn">[0010]</span> {{p.10.h}}</h3><p>{{p.10}}</p><p class="mat"><span>{{mat.label}}</span> {{p.10.m}}</p></div>
+    <div class="para" data-step="2" data-part="20"><h3><span class="pn">[0020]</span> {{p.20.h}}</h3><p>{{p.20}}</p><p class="mat"><span>{{mat.label}}</span> {{p.20.m}}</p></div>
+    <div class="para" data-step="3" data-part="30"><h3><span class="pn">[0030]</span> {{p.30.h}}</h3><p>{{p.30}}</p><p class="mat"><span>{{mat.label}}</span> {{p.30.m}}</p></div>
+    <div class="para" data-step="4" data-part="40"><h3><span class="pn">[0040]</span> {{p.40.h}}</h3><p>{{p.40}}</p><p class="mat"><span>{{mat.label}}</span> {{p.40.m}}</p></div>
+    <div class="para" data-step="5" data-part="50"><h3><span class="pn">[0050]</span> {{p.50.h}}</h3><p>{{p.50}}</p><p class="mat"><span>{{mat.label}}</span> {{p.50.m}}</p></div>
+    <div class="para" data-step="6" data-part="2"><p><span class="pn">[0002]</span> {{p.0002}}</p></div>
+  </div>
+  <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 2 {{strip.of}} 10</p>
+</section>
+
+<section class="cases" id="cases" aria-labelledby="cases-h">
+  <header class="cases-head">
+    <h2 id="cases-h">{{cases.h}}</h2>
+    <p>{{cases.lead}}</p>
+  </header>
+
+  <article class="sheet case" id="fig-3" data-sheet="3" aria-labelledby="c3-h">
+    <figure class="case-fig" data-scope data-demo="orion">
+      {{{fig3}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="orion" data-a="{{c3.btnM}}" data-b="{{c3.btnD}}">{{c3.btnM}}</button></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c3-h">{{c3.h}}</h3>
+      <p class="meta">{{c3.meta}}</p>
+      <p class="ctx">{{c3.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c3.built}}</ul>
+      <h4>{{case.dec}}</h4><ul>{{c3.dec}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c3.m}}</p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 3 {{strip.of}} 10</p>
+  </article>
+
+  <article class="sheet case flip" id="fig-4" data-sheet="4" aria-labelledby="c4-h">
+    <figure class="case-fig" data-scope data-demo="inject">
+      {{{fig4}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="inject">{{{icon.arrow}}}<span>{{c4.btn}}</span></button></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c4-h">{{c4.h}}</h3>
+      <p class="meta">{{c4.meta}}</p>
+      <p class="ctx">{{c4.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c4.built}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c4.m}}</p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 4 {{strip.of}} 10</p>
+  </article>
+
+  <article class="sheet case" id="fig-5" data-sheet="5" aria-labelledby="c5-h">
+    <figure class="case-fig" data-scope data-demo="shadow">
+      {{{fig5}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="shadow" data-a="{{c5.btn}}" data-b="{{c5.btnR}}" aria-pressed="false">{{c5.btn}}</button></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c5-h">{{c5.h}}</h3>
+      <p class="meta">{{c5.meta}}</p>
+      <p class="ctx">{{c5.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c5.built}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c5.m}}</p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 5 {{strip.of}} 10</p>
+  </article>
+
+  <article class="sheet case flip" id="fig-6" data-sheet="6" aria-labelledby="c6-h">
+    <figure class="case-fig curve-wrap" data-scope data-demo="curve" data-l-day="{{c6.day}}" data-l-real="{{c6.real}}" data-l-proj="{{c6.proj}}" data-l-prev="{{c6.prev}}" data-l-unit="{{c6.unit}}" data-lang="{{lang}}">
+      {{{fig6}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="theme" data-a="{{c6.btn}}" data-b="{{c6.btnL}}" aria-pressed="false">{{c6.btn}}</button><p class="readout">{{c6.read}}</p></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c6-h">{{c6.h}}</h3>
+      <p class="meta">{{c6.meta}}</p>
+      <p class="ctx">{{c6.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c6.built}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c6.m}}</p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 6 {{strip.of}} 10</p>
+  </article>
+
+  <article class="sheet case" id="fig-7" data-sheet="7" aria-labelledby="c7-h">
+    <figure class="case-fig" data-scope data-demo="grid" data-states="{{c7.states}}" data-l-dev="{{c7.dev}}">
+      {{{fig7}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="grid-reset">{{c7.reset}}</button><button class="btn btn-sm" type="button" data-act="grid-next">{{c7.next}}</button><p class="readout">{{c7.hint}}</p></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c7-h">{{c7.h}}</h3>
+      <p class="meta">{{c7.meta}}</p>
+      <p class="ctx">{{c7.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c7.built}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c7.m}}</p>
+      <p class="links"><a href="https://github.com/thiago-fv-diniz/sentinela" rel="noopener" target="_blank">{{c7.code}}</a></p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 7 {{strip.of}} 10</p>
+  </article>
+
+  <article class="sheet case flip" id="fig-8" data-sheet="8" aria-labelledby="c8-h">
+    <figure class="case-fig" data-scope data-demo="template">
+      {{{fig8}}}
+      <div class="fig-ctl"><button class="btn btn-sm" type="button" data-act="template">{{c8.btn}}</button></div>
+    </figure>
+    <div class="case-text">
+      <h3 id="c8-h">{{c8.h}}</h3>
+      <p class="meta">{{c8.meta}}</p>
+      <p class="ctx">{{c8.ctx}}</p>
+      <h4>{{case.built}}</h4><ul>{{c8.built}}</ul>
+      <p class="mat"><span>{{mat.label}}</span> {{c8.m}}</p>
+    </div>
+    <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 8 {{strip.of}} 10</p>
+  </article>
+</section>
+
+<section class="sheet hist" id="history" data-sheet="9" aria-labelledby="hist-h">
+  <h2 id="hist-h">{{hist.h}}</h2>
+  {{{timeline}}}
+  <table class="revtable">
+    <thead><tr><th scope="col">{{hist.rev}}</th><th scope="col">{{hist.when}}</th><th scope="col">{{hist.what}}</th><th scope="col">{{hist.where}}</th></tr></thead>
+    <tbody>
+      <tr class="cur"><td class="rev">C</td><td class="when">{{hist.c.when}}</td><td>{{hist.c.what}}</td><td class="where">Lifters</td></tr>
+      <tr><td class="rev">B</td><td class="when">{{hist.b.when}}</td><td>{{hist.b.what}}</td><td class="where">MarjoSports</td></tr>
+      <tr><td class="rev">A</td><td class="when">{{hist.a.when}}</td><td>{{hist.a.what}}</td><td class="where">MarjoSports</td></tr>
+      <tr class="edu"><td class="rev">—</td><td class="when">{{hist.edu.when}}</td><td>{{hist.edu.what}}</td><td class="where">UEPB</td></tr>
+    </tbody>
+  </table>
+  <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 9 {{strip.of}} 10</p>
+</section>
+
+<section class="sheet claims" id="claims" data-sheet="10" aria-labelledby="claims-h">
+  <div class="claims-text">
+    <h2 id="claims-h">{{claims.h}}</h2>
+    <p class="lead">{{claims.lead}}</p>
+    <ol class="claimlist">{{claims.list}}</ol>
+    <div class="actions">
+      <a class="btn btn-ink" href="mailto:thiagof.vdiniz@gmail.com">{{{icon.mail}}}<span>{{cta.mail}}</span></a>
+      <button class="btn copy" type="button" data-mail="thiagof.vdiniz@gmail.com">{{{icon.copy}}}<span>{{cta.copy}}</span></button>
+      <a class="btn" href="{{base}}assets/cv/thiago-diniz-cv.pdf" download="Thiago-Diniz-CV.pdf">{{{icon.down}}}<span>{{btn.cv}}</span></a>
+    </div>
+    <p class="links"><a href="mailto:thiagof.vdiniz@gmail.com">thiagof.vdiniz@gmail.com</a><a href="https://www.linkedin.com/in/thiago-diniz-dev" rel="me noopener" target="_blank">LinkedIn</a><a href="https://github.com/thiago-fv-diniz" rel="me noopener" target="_blank">GitHub</a><span>{{base.value}}</span></p>
+  </div>
+  <div class="seal" role="img" aria-label="{{seal.alt}}">{{{seal}}}</div>
+  <p class="sheet-mark" aria-hidden="true">{{strip.sheet}} 10 {{strip.of}} 10</p>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="tb-cell tb-mark">{{{mono}}}</div>
+  <p class="tb-cell">© 2026 Thiago Felipe Viana Diniz</p>
+  <p class="tb-cell">{{foot.made}} <a href="https://github.com/thiago-fv-diniz/dev" rel="noopener" target="_blank">github.com/thiago-fv-diniz/dev</a></p>
+  <p class="tb-cell">{{foot.draw}}</p>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" data-msg="{{toast}}"></div>
+</body>
+</html>
