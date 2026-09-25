@@ -1,0 +1,7 @@
+# GitHub Pages (build legacy/Jekyll): só o site é publicado.
+# Documentação de design e ferramentas de desenvolvimento ficam fora do ar.
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - README.md
+  - tools/

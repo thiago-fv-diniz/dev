@@ -1,0 +1,6 @@
+# Impeccable: evidência de revisão e notas locais (não versionar)
+.impeccable/review/
+.impeccable/cases.md
+.impeccable/config.local.json
+.DS_Store
+.impeccable/questions/
