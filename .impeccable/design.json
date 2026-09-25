@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T20:54:42.564Z",
+  "title": "Design System: Thiago Diniz Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "carmine": {
+        "role": "primary",
+        "displayName": "Examiner's Carmine",
+        "canonical": "#b11e2b",
+        "tonalRamp": [
+          "oklch(15.0% 0.181 23.2)",
+          "oklch(26.4% 0.181 23.2)",
+          "oklch(37.9% 0.181 23.2)",
+          "oklch(49.3% 0.181 23.2)",
+          "oklch(60.7% 0.181 23.2)",
+          "oklch(72.1% 0.181 23.2)",
+          "oklch(83.6% 0.181 23.2)",
+          "oklch(95.0% 0.181 23.2)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "India Ink",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "oklch(15.0% 0 0)",
+          "oklch(26.4% 0 0)",
+          "oklch(37.9% 0 0)",
+          "oklch(49.3% 0 0)",
+          "oklch(60.7% 0 0)",
+          "oklch(72.1% 0 0)",
+          "oklch(83.6% 0 0)",
+          "oklch(95.0% 0 0)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Diluted Ink",
+        "canonical": "#3b3b38",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 106.7)",
+          "oklch(26.4% 0.005 106.7)",
+          "oklch(37.9% 0.005 106.7)",
+          "oklch(49.3% 0.005 106.7)",
+          "oklch(60.7% 0.005 106.7)",
+          "oklch(72.1% 0.005 106.7)",
+          "oklch(83.6% 0.005 106.7)",
+          "oklch(95.0% 0.005 106.7)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Wash Ink",
+        "canonical": "#5f5f5a",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 106.7)",
+          "oklch(26.4% 0.008 106.7)",
+          "oklch(37.9% 0.008 106.7)",
+          "oklch(49.3% 0.008 106.7)",
+          "oklch(60.7% 0.008 106.7)",
+          "oklch(72.1% 0.008 106.7)",
+          "oklch(83.6% 0.008 106.7)",
+          "oklch(95.0% 0.008 106.7)"
+        ]
+      },
+      "bond": {
+        "role": "neutral",
+        "displayName": "Bond",
+        "canonical": "#fbfbf8",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 106.5)",
+          "oklch(26.4% 0.004 106.5)",
+          "oklch(37.9% 0.004 106.5)",
+          "oklch(49.3% 0.004 106.5)",
+          "oklch(60.7% 0.004 106.5)",
+          "oklch(72.1% 0.004 106.5)",
+          "oklch(83.6% 0.004 106.5)",
+          "oklch(95.0% 0.004 106.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The inventor's name only: two rows of spaced capitals on sheet 1."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Sheet titles, uppercase and balanced."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Case titles and specification paragraph heads, sentence case."
+      },
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "The role-and-stack line under the name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "The descriptive report: specification and case paragraphs at 58 to 70ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field names, list headings, table headers and run-ins in tracked capitals."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Button and strip labels in tracked capitals."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Inline reference numerals in running text, dotted underline, carmine under examination."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Machine voice: readouts, logs, dates, stamps, ASCII eggs."
+      }
+    },
+    "shadows": [
+      {
+        "name": "inner-rule",
+        "value": "inset 0 0 0 3px var(--bond), inset 0 0 0 3.75px var(--ring)",
+        "purpose": "Second rule inside outline buttons; --ring is ink at rest, carmine on hover or pressed. Draws a line, not elevation."
+      },
+      {
+        "name": "inner-rule-ink",
+        "value": "inset 0 0 0 3px var(--ink), inset 0 0 0 3.75px var(--bond)",
+        "purpose": "The same inner rule on ink surfaces (primary button, CV cell); ring turns carmine on hover."
+      },
+      {
+        "name": "frame-mask",
+        "value": "0 0 0 calc(var(--inset) + 2px) var(--bond), inset 0 0 0 4px var(--bond)",
+        "purpose": "Paints the paper margin outside the fixed frame and a clear band inside it."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default settle (--ease): button rings, icon nudge, sheet moves in figures, the stamp press."
+      },
+      {
+        "name": "ease-plot",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Plotter pen: boot frame strokes, the drawn curve, the timeline base line."
+      },
+      {
+        "name": "duration-color",
+        "value": "0.15s",
+        "purpose": "Text and link colour changes."
+      },
+      {
+        "name": "duration-ring",
+        "value": "0.18s",
+        "purpose": "Button ring changing to carmine."
+      },
+      {
+        "name": "duration-stroke",
+        "value": "0.2s",
+        "purpose": "Figure strokes and fills entering or leaving the exam state."
+      },
+      {
+        "name": "plot-segment",
+        "value": "0.3s",
+        "purpose": "One frame edge drawn by the boot plotter; edges start 0.28s apart, clockwise."
+      },
+      {
+        "name": "stamp",
+        "value": "0.46s",
+        "purpose": "Seal press: scale 1.35 / -18deg to 0.97 / -7deg (55%) to 1 / -8deg at 0.94 opacity."
+      },
+      {
+        "name": "line-draw",
+        "value": "1.6s to 1.8s",
+        "purpose": "Long line draws on sight (curve, timeline) on ease-plot."
+      },
+      {
+        "name": "damped-follow",
+        "value": "0.14 per frame (parts), 0.18 per frame (request sphere)",
+        "purpose": "Fig. 2 exploded view follows native scroll with exponential damping, no overshoot."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "strip-title",
+        "value": "1400px"
+      },
+      {
+        "name": "sheet1-two-column",
+        "value": "1240px"
+      },
+      {
+        "name": "single-column",
+        "value": "960px"
+      },
+      {
+        "name": "phone",
+        "value": "640px"
+      },
+      {
+        "name": "narrow",
+        "value": "400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink plate with a bond inner rule; the single primary action in a group (download the CV, send an e-mail).",
+      "html": "<a class=\"ds-btn-ink\" href=\"#cv\"><svg class=\"ds-btn-ink-ico\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 2.5v8 M4.5 7.2 8 10.7l3.5-3.5 M2.5 13.5h11\"/></svg><span>Baixar CV (PDF)</span></a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; gap: 0.7em; min-height: 46px; padding: 0.85em 1.35em; font: 400 0.8125rem/1.1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--bond, #fbfbf8); background: var(--ink, #141414); border: 1px solid var(--ink, #141414); border-radius: 0; box-shadow: inset 0 0 0 3px var(--ink, #141414), inset 0 0 0 3.75px var(--bond, #fbfbf8); transition: box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1), color 0.15s, background-color 0.15s; cursor: pointer; } .ds-btn-ink:hover { box-shadow: inset 0 0 0 3px var(--ink, #141414), inset 0 0 0 3.75px var(--carmine, #b11e2b); } .ds-btn-ink:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; } .ds-btn-ink-ico { width: 1.05em; height: 1.05em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: square; stroke-linejoin: miter; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline plate: 1px ink border plus a 0.75px inner ring that turns carmine on hover; the trailing arrow nudges 3px.",
+      "html": "<a class=\"ds-btn\" href=\"#fig-2\"><span>Ver a vista explodida</span><svg class=\"ds-btn-ico\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M2.5 8h10.5 M9.2 4.3 13 8l-3.8 3.7\"/></svg></a>",
+      "css": ".ds-btn { --ring: var(--ink, #141414); display: inline-flex; align-items: center; gap: 0.7em; min-height: 46px; padding: 0.85em 1.35em; font: 400 0.8125rem/1.1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--ink, #141414); background: var(--bond, #fbfbf8); border: 1px solid var(--ink, #141414); border-radius: 0; box-shadow: inset 0 0 0 3px var(--bond, #fbfbf8), inset 0 0 0 3.75px var(--ring); transition: box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1), color 0.15s, background-color 0.15s; cursor: pointer; } .ds-btn:hover { --ring: var(--carmine, #b11e2b); } .ds-btn:active { box-shadow: inset 0 0 0 4px var(--bond, #fbfbf8), inset 0 0 0 5px var(--ring); } .ds-btn:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; } .ds-btn-ico { width: 1.05em; height: 1.05em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: square; stroke-linejoin: miter; } .ds-btn-ico { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover .ds-btn-ico { transform: translateX(3px); }"
+    },
+    {
+      "name": "Figure Control",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Small outline button under a demonstration figure; toggles swap their label, and aria-pressed keeps the carmine ring. Readouts print in Courier Prime beside it.",
+      "html": "<div class=\"ds-fig-ctl\"><button class=\"ds-btn-sm\" type=\"button\" aria-pressed=\"false\">Tema escuro</button><button class=\"ds-btn-sm\" type=\"button\" aria-pressed=\"true\">Tema claro</button><p class=\"ds-readout\">Passe o cursor na curva para ler os valores. Dados fictícios.</p></div>",
+      "css": ".ds-fig-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; } .ds-btn-sm { --ring: var(--ink, #141414); display: inline-flex; align-items: center; min-height: 38px; padding: 0.65em 1em; font: 400 0.75rem/1.1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink, #141414); background: var(--bond, #fbfbf8); border: 1px solid var(--ink, #141414); border-radius: 0; box-shadow: inset 0 0 0 3px var(--bond, #fbfbf8), inset 0 0 0 3.75px var(--ring); transition: box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; } .ds-btn-sm:hover, .ds-btn-sm[aria-pressed=\"true\"] { --ring: var(--carmine, #b11e2b); } .ds-btn-sm:active { box-shadow: inset 0 0 0 4px var(--bond, #fbfbf8), inset 0 0 0 5px var(--ring); } .ds-btn-sm:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; } .ds-readout { margin: 0; font: 400 0.82rem/1.45 var(--f-mono, \"Courier Prime\", \"Courier New\", Courier, monospace); font-variant-numeric: tabular-nums; color: var(--ink-2, #3b3b38); }"
+    },
+    {
+      "name": "Title-Block Strip",
+      "kind": "nav",
+      "refersTo": "title-block-strip",
+      "description": "Sticky title block: ruled cells for monogram, invention title, sheet counter, section links, language, pause and the ink CV cell; a 1.5px ink line tracks scroll progress.",
+      "html": "<header class=\"ds-strip\" style=\"--p: 0.35\"><a class=\"ds-strip-mark\" href=\"#top\" aria-label=\"Início\"><svg class=\"ds-mono\" viewBox=\"0 0 40 40\" aria-hidden=\"true\"><rect class=\"ds-mo\" x=\"1.5\" y=\"1.5\" width=\"37\" height=\"37\"/><rect class=\"ds-mt\" x=\"4.5\" y=\"4.5\" width=\"31\" height=\"31\"/><path class=\"ds-mo\" d=\"M9 12 H21 M15 12 V29 M22 12 H26 Q32 12 32 20.5 Q32 29 26 29 H22 Z\"/></svg></a><p class=\"ds-strip-title\">Sistema e método para entregar software do pixel ao deploy</p><p class=\"ds-strip-sheet\"><span>Folha</span> <b>2</b> <span>de</span> <b>10</b></p><nav class=\"ds-strip-nav\" aria-label=\"Seções\"><a class=\"ds-on\" href=\"#fig-2\">Especificação</a><a href=\"#cases\">Cases</a><a href=\"#history\">Histórico</a><a href=\"#claims\">Contato</a></nav><a class=\"ds-strip-lang\" href=\"#en\">EN</a><button class=\"ds-strip-pause\" type=\"button\" aria-pressed=\"false\" title=\"Pausar animações\"><svg class=\"ds-strip-ico\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M5.5 3.5v9 M10.5 3.5v9\"/></svg></button><a class=\"ds-strip-cv\" href=\"#cv\"><svg class=\"ds-strip-ico\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 2.5v8 M4.5 7.2 8 10.7l3.5-3.5 M2.5 13.5h11\"/></svg><span>Baixar CV</span></a></header>",
+      "css": ".ds-strip { position: relative; display: flex; align-items: stretch; height: 52px; background: var(--bond, #fbfbf8); color: var(--ink, #141414); border-bottom: 0.75px solid var(--ink, #141414); } .ds-strip::after { content: \"\"; position: absolute; left: 0; right: 0; bottom: -1px; height: 1.5px; background: var(--ink, #141414); transform-origin: left; transform: scaleX(var(--p, 0)); } .ds-strip > * { display: flex; align-items: center; margin: 0; padding: 0 16px; border-left: 0.75px solid var(--ink, #141414); white-space: nowrap; } .ds-strip > :first-child { border-left: 0; } .ds-strip-mark { padding: 0 12px; color: var(--ink, #141414); } .ds-mono { width: 30px; height: 30px; } .ds-mo { fill: none; stroke: currentColor; stroke-width: 1.6; } .ds-mt { fill: none; stroke: currentColor; stroke-width: 0.8; } .ds-strip-title { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; font: 400 0.7rem/1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.1em; text-transform: uppercase; } .ds-strip-sheet { gap: 0.4em; font: 400 0.72rem/1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-2, #3b3b38); } .ds-strip-sheet b { font-weight: 700; color: var(--ink, #141414); font-variant-numeric: tabular-nums; } .ds-strip-nav { gap: 22px; } .ds-strip-nav a, .ds-strip-lang { font: 400 0.75rem/1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--ink, #141414); transition: color 0.15s; } .ds-strip-nav a:hover, .ds-strip-lang:hover, .ds-strip-pause:hover { color: var(--carmine, #b11e2b); } .ds-strip-nav a.ds-on { text-decoration: underline; text-decoration-color: var(--carmine, #b11e2b); text-decoration-thickness: 1.5px; text-underline-offset: 0.5em; } .ds-strip-pause { width: 52px; justify-content: center; padding: 0; background: none; border-top: 0; border-right: 0; border-bottom: 0; color: var(--ink, #141414); cursor: pointer; } .ds-strip-cv { gap: 0.6em; background: var(--ink, #141414); color: var(--bond, #fbfbf8); text-decoration: none; font: 400 0.75rem/1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.15em; text-transform: uppercase; box-shadow: inset 0 0 0 3px var(--ink, #141414), inset 0 0 0 3.75px var(--bond, #fbfbf8); transition: box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-strip-cv:hover { box-shadow: inset 0 0 0 3px var(--ink, #141414), inset 0 0 0 3.75px var(--carmine, #b11e2b); } .ds-strip a:focus-visible, .ds-strip button:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: -4px; } .ds-strip-ico { width: 1.05em; height: 1.05em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: square; stroke-linejoin: miter; }"
+    },
+    {
+      "name": "Sheet Mark",
+      "kind": "chip",
+      "refersTo": "sheet-mark",
+      "description": "Boxed sheet number that closes every sheet in its bottom-right corner, ruled on its top and left edges above the 1.5px sheet rule.",
+      "html": "<div class=\"ds-sheet-corner\"><p class=\"ds-sheet-mark\">Folha 3 de 10</p></div>",
+      "css": ".ds-sheet-corner { position: relative; width: 280px; height: 96px; background: var(--bond, #fbfbf8); border-bottom: 1.5px solid var(--ink, #141414); } .ds-sheet-mark { position: absolute; right: 0; bottom: 0; margin: 0; padding: 7px 14px; background: var(--bond, #fbfbf8); border-left: 0.75px solid var(--ink, #141414); border-top: 0.75px solid var(--ink, #141414); font: 400 0.68rem/1 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-2, #3b3b38); }"
+    },
+    {
+      "name": "Reference List",
+      "kind": "custom",
+      "refersTo": "reference-numeral",
+      "description": "The sheet's list of reference numerals; an entry under examination turns carmine together with its part and leader in the figure.",
+      "html": "<aside class=\"ds-refs\"><h2 class=\"ds-refs-h\">Numerais de referência</h2><ol class=\"ds-reflist\"><li><b>1</b>Requisição</li><li><b>2</b>Resposta</li><li class=\"ds-exam\"><b>10</b>Interface</li><li><b>20</b>Aplicação</li><li><b>30</b>Dados</li></ol></aside>",
+      "css": ".ds-refs { width: 220px; padding: 24px 16px; background: var(--bond, #fbfbf8); color: var(--ink, #141414); border-left: 0.75px solid var(--ink, #141414); } .ds-refs-h { margin: 0 0 16px; padding-bottom: 12px; border-bottom: 0.75px solid var(--ink, #141414); font: 400 0.72rem/1.3 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.18em; text-transform: uppercase; } .ds-reflist { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; } .ds-reflist li { display: grid; grid-template-columns: 2.1em 1fr; align-items: baseline; padding: 5px 0; font: 400 0.76rem/1.3 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.05em; text-transform: uppercase; cursor: help; transition: color 0.15s; } .ds-reflist li b { font-weight: 400; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; } .ds-reflist li:hover, .ds-reflist li.ds-exam { color: var(--carmine, #b11e2b); }"
+    },
+    {
+      "name": "Specification Paragraph",
+      "kind": "custom",
+      "refersTo": "reference-numeral-exam",
+      "description": "Descriptive-report paragraph: bracketed tabular paragraph number (carmine while the paragraph is in reading position), inline bold reference numeral with a dotted underline that turns carmine under examination, and a Materials run-in line.",
+      "html": "<div class=\"ds-para ds-on\"><h3 class=\"ds-para-h\"><span class=\"ds-pn\">[0010]</span> Interface</h3><p class=\"ds-para-p\">A camada que o usuário sente. Construo interfaces <b class=\"ds-ref\" tabindex=\"0\">10</b> em React e TypeScript.</p><p class=\"ds-mat\"><span>Materiais</span> React · TypeScript · Next.js</p></div>",
+      "css": ".ds-para { max-width: 62ch; color: var(--ink, #141414); } .ds-para-h { display: flex; gap: 0.6em; align-items: baseline; margin: 0 0 0.55em; font: 400 clamp(1.45rem, 2.1vw, 1.9rem)/1.15 var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.01em; } .ds-pn { font: 600 0.72em var(--f-text, \"Source Serif 4\", Georgia, \"Times New Roman\", serif); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; transition: color 0.2s; } .ds-para.ds-on .ds-pn { color: var(--carmine, #b11e2b); } .ds-para-p { margin: 0; font: 400 1.0625rem/1.65 var(--f-text, \"Source Serif 4\", Georgia, \"Times New Roman\", serif); } .ds-ref { font-family: var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); font-weight: 700; font-size: 0.92em; letter-spacing: 0.02em; padding: 0 0.08em; border-bottom: 0.75px dotted var(--ink-3, #5f5f5a); cursor: help; transition: color 0.15s, border-color 0.15s; } .ds-ref:hover, .ds-ref:focus-visible { color: var(--carmine, #b11e2b); border-bottom-color: var(--carmine, #b11e2b); outline: none; } .ds-mat { margin: 1.1em 0 0; font: 400 0.95rem/1.6 var(--f-text, \"Source Serif 4\", Georgia, \"Times New Roman\", serif); color: var(--ink-2, #3b3b38); } .ds-mat > span { font-family: var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink, #141414); margin-right: 0.8em; }"
+    },
+    {
+      "name": "Figure Callout",
+      "kind": "custom",
+      "refersTo": "reference-numeral-exam",
+      "description": "Patent-figure grammar: 0.34 isometric cylinder with right-weighted shading and sparse 45° hatch, chain-line axis, shaded sphere, curved leaders to numerals, FIG. label. Hover or focus puts part 20 under examination.",
+      "html": "<figure class=\"ds-callout\" tabindex=\"0\"><svg viewBox=\"0 0 600 330\" role=\"img\" aria-label=\"FIG. 1\"><defs><pattern id=\"ds-h0\" width=\"9\" height=\"9\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"9\" class=\"ds-hl\"/></pattern></defs><line class=\"ds-axis\" x1=\"300\" y1=\"6\" x2=\"300\" y2=\"286\"/><g class=\"ds-p20\"><path class=\"ds-o\" d=\"M150 96 V206 A150 51 0 0 0 450 206 V96 Z\"/><path class=\"ds-t\" d=\"M150 136 A150 51 0 0 0 450 136\"/><path class=\"ds-t\" d=\"M150 176 A150 51 0 0 0 450 176\"/><line class=\"ds-s\" x1=\"375\" y1=\"141.57\" x2=\"375\" y2=\"248.77\"/><line class=\"ds-s\" x1=\"387.32\" y1=\"138.87\" x2=\"387.32\" y2=\"246.07\"/><line class=\"ds-s\" x1=\"398.8\" y1=\"135.77\" x2=\"398.8\" y2=\"242.97\"/><line class=\"ds-s\" x1=\"409.35\" y1=\"132.31\" x2=\"409.35\" y2=\"239.51\"/><line class=\"ds-s\" x1=\"418.84\" y1=\"128.52\" x2=\"418.84\" y2=\"235.72\"/><line class=\"ds-s\" x1=\"427.21\" y1=\"124.43\" x2=\"427.21\" y2=\"231.63\"/><line class=\"ds-s\" x1=\"434.36\" y1=\"120.08\" x2=\"434.36\" y2=\"227.28\"/><line class=\"ds-s\" x1=\"440.22\" y1=\"115.51\" x2=\"440.22\" y2=\"222.71\"/><line class=\"ds-s\" x1=\"444.75\" y1=\"110.77\" x2=\"444.75\" y2=\"217.97\"/><line class=\"ds-s\" x1=\"447.9\" y1=\"105.91\" x2=\"447.9\" y2=\"213.11\"/><line class=\"ds-s\" x1=\"449.63\" y1=\"100.96\" x2=\"449.63\" y2=\"208.16\"/><ellipse class=\"ds-o\" cx=\"300\" cy=\"96\" rx=\"150\" ry=\"51\"/><ellipse class=\"ds-h0\" cx=\"300\" cy=\"96\" rx=\"130\" ry=\"44.2\"/><ellipse class=\"ds-t\" cx=\"300\" cy=\"96\" rx=\"130\" ry=\"44.2\"/><ellipse class=\"ds-t\" cx=\"300\" cy=\"96\" rx=\"138\" ry=\"46.92\"/><ellipse class=\"ds-o\" cx=\"300\" cy=\"96\" rx=\"18\" ry=\"6.12\"/></g><circle class=\"ds-o\" cx=\"300\" cy=\"26\" r=\"11\"/><path class=\"ds-s\" d=\"M307.03 23.32 A8.38 8.38 0 0 1 297.32 33.03\"/><path class=\"ds-s\" d=\"M303.23 22.56 A5.76 5.76 0 0 1 296.56 29.23\"/><path class=\"ds-s\" d=\"M299.43 21.79 A3.14 3.14 0 0 1 295.79 25.43\"/><text class=\"ds-n ds-r1\" x=\"566\" y=\"31\" text-anchor=\"start\">1</text><path class=\"ds-ld ds-r1\" d=\"M557 26 C463.9 42 400.2 10 312 26\"/><circle class=\"ds-ld-end ds-r1\" cx=\"312\" cy=\"26\" r=\"2.4\"/><text class=\"ds-n ds-r10\" x=\"34\" y=\"71\" text-anchor=\"end\">10</text><path class=\"ds-ld ds-r10\" d=\"M43 66 C91.26 53.3 124.28 98.7 170 86\"/><circle class=\"ds-ld-end ds-r10\" cx=\"170\" cy=\"86\" r=\"2.4\"/><text class=\"ds-n ds-r20\" x=\"566\" y=\"165\" text-anchor=\"start\">20</text><path class=\"ds-ld ds-r20\" d=\"M557 160 C516.72 149.4 489.16 170.6 451 160\"/><circle class=\"ds-ld-end ds-r20\" cx=\"451\" cy=\"160\" r=\"2.4\"/><text class=\"ds-figl\" x=\"300\" y=\"318\" text-anchor=\"middle\">FIG. 1</text></svg></figure>",
+      "css": ".ds-callout { margin: 0; max-width: 520px; background: var(--bond, #fbfbf8); outline: none; } .ds-callout svg { display: block; width: 100%; height: auto; } .ds-o { fill: var(--bond, #fbfbf8); stroke: var(--ink, #141414); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; transition: stroke 0.2s; } .ds-t { fill: none; stroke: var(--ink, #141414); stroke-width: 0.85; vector-effect: non-scaling-stroke; transition: stroke 0.2s; } .ds-s { stroke: var(--ink, #141414); stroke-width: 0.6; vector-effect: non-scaling-stroke; transition: stroke 0.2s; } .ds-hl { stroke: var(--ink, #141414); stroke-width: 0.55; } .ds-h0 { fill: url(#ds-h0); stroke: none; } .ds-axis { fill: none; stroke: var(--ink, #141414); stroke-width: 0.7; stroke-dasharray: 18 5 3 5; vector-effect: non-scaling-stroke; } .ds-ld { fill: none; stroke: var(--ink, #141414); stroke-width: 0.8; vector-effect: non-scaling-stroke; transition: stroke 0.2s; } .ds-ld-end { fill: var(--carmine, #b11e2b); opacity: 0; transition: opacity 0.2s; } .ds-n { font: 400 19px var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); fill: var(--ink, #141414); transition: fill 0.2s; } .ds-figl { font: 400 22px var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.16em; fill: var(--ink, #141414); } .ds-callout:hover .ds-p20 .ds-o, .ds-callout:focus-visible .ds-p20 .ds-o { stroke: var(--carmine, #b11e2b); stroke-width: 2.1; } .ds-callout:hover .ds-p20 .ds-t, .ds-callout:hover .ds-p20 .ds-s, .ds-callout:focus-visible .ds-p20 .ds-t, .ds-callout:focus-visible .ds-p20 .ds-s { stroke: var(--carmine, #b11e2b); } .ds-callout:hover .ds-ld.ds-r20, .ds-callout:focus-visible .ds-ld.ds-r20 { stroke: var(--carmine, #b11e2b); stroke-width: 1.3; } .ds-callout:hover .ds-ld-end.ds-r20, .ds-callout:focus-visible .ds-ld-end.ds-r20 { opacity: 1; } .ds-callout:hover .ds-n.ds-r20, .ds-callout:focus-visible .ds-n.ds-r20 { fill: var(--carmine, #b11e2b); } .ds-callout:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Seal",
+      "kind": "custom",
+      "refersTo": "seal",
+      "description": "The examiner's DEFERIDO / 200 stamp: three rings, words on the arc, carmine at 0.94 opacity rotated -8°. Hover or focus replays the 0.46s press.",
+      "html": "<div class=\"ds-seal\" tabindex=\"0\"><svg viewBox=\"0 0 200 200\" role=\"img\" aria-label=\"DEFERIDO 200\"><defs><path id=\"ds-seal-arc\" d=\"M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0\"/></defs><circle class=\"ds-sl\" cx=\"100\" cy=\"100\" r=\"94\"/><circle class=\"ds-sl ds-thin\" cx=\"100\" cy=\"100\" r=\"88\"/><circle class=\"ds-sl ds-thin\" cx=\"100\" cy=\"100\" r=\"58\"/><text class=\"ds-seal-t\"><textPath href=\"#ds-seal-arc\" startOffset=\"0\" textLength=\"484\" lengthAdjust=\"spacingAndGlyphs\">DEFERIDO · PEDIDO TD-2023 · DEFERIDO · PEDIDO TD-2023 ·</textPath></text><text class=\"ds-seal-n\" x=\"100\" y=\"112\" text-anchor=\"middle\">200</text></svg></div>",
+      "css": ".ds-seal { width: 200px; color: var(--carmine, #b11e2b); opacity: 0.94; transform: rotate(-8deg); outline: none; } .ds-seal svg { display: block; width: 100%; height: auto; } .ds-sl { fill: none; stroke: currentColor; stroke-width: 3; } .ds-sl.ds-thin { stroke-width: 1.2; } .ds-seal-t { font: 700 14px var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.12em; fill: currentColor; } .ds-seal-n { font: 400 52px var(--f-display, \"Old Standard TT\", \"Times New Roman\", Times, serif); letter-spacing: 0.02em; fill: currentColor; } .ds-seal:hover, .ds-seal:focus-visible { animation: ds-stamp 0.46s cubic-bezier(0.16, 1, 0.3, 1) forwards; } .ds-seal:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; } @keyframes ds-stamp { 0% { opacity: 0; transform: scale(1.35) rotate(-18deg); } 55% { opacity: 1; transform: scale(0.97) rotate(-7deg); } 100% { opacity: 0.94; transform: scale(1) rotate(-8deg); } } @media (prefers-reduced-motion: reduce) { .ds-seal:hover, .ds-seal:focus-visible { animation: none; } }"
+    },
+    {
+      "name": "Text Links",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "Contact row in Source Serif: 0.75px underline at a 0.22em offset, carmine on hover, dashed carmine focus.",
+      "html": "<p class=\"ds-links\"><a href=\"#mail\">E-mail</a><a href=\"#linkedin\">LinkedIn</a><a href=\"#github\">GitHub</a></p>",
+      "css": ".ds-links { display: flex; flex-wrap: wrap; gap: 0.35em 1.4em; margin: 0; font: 400 0.95rem/1.4 var(--f-text, \"Source Serif 4\", Georgia, \"Times New Roman\", serif); } .ds-links a { color: var(--ink, #141414); text-decoration: underline; text-decoration-thickness: 0.75px; text-underline-offset: 0.22em; transition: color 0.15s, text-decoration-color 0.15s; } .ds-links a:hover { color: var(--carmine, #b11e2b); } .ds-links a:focus-visible { outline: 1.5px dashed var(--carmine, #b11e2b); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Patent Drawing Sheet",
+    "overview": "The site is a patent application for an invention, with the developer as its inventor. Every screen is a drawing sheet: a fixed double-ruled frame with registration marks at its corners, a title-block strip across the top that counts the sheet in view, and sheets stacked one after another, each closed by a heavy rule and a boxed sheet number in its bottom-right corner. The build ships ten sheets (the direction contract planned nine); the strip and every sheet mark count ten.\n\nThe material is India ink on bond paper. Drawings are line work with exact geometry: isometric cylinders, curved leader lines running to reference numerals, dashed hidden lines, chain-line axes, and 45° hatching as the only tone. Colour is a single carmine, held back for whatever is under examination. The density is that of a technical document: ruled cells instead of cards, a comfortable measure for the descriptive text, small tracked capitals for every label.\n\nMotion follows the drafting tools. A plotter draws lines, parts slide along their axis with a damped follow, stamps press into the paper. The confirmed rejection is the category default: a dark hero with neon and a grid of project cards.",
+    "keyCharacteristics": [
+      "Light only: India Ink on Bond, with no page dark theme.",
+      "Three typefaces, three voices: drawing lettering, descriptive report, machine output.",
+      "Ruled cells, square corners, no elevation.",
+      "Carmine only on the part under examination and on the examiner's marks.",
+      "Figures are generated SVG with a fixed vocabulary of line weights, dashes and hatch densities.",
+      "Every continuous motion pauses from the strip and stops under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Examiner's Red Rule",
+        "body": "Carmine appears only on what is under examination (a state) or as an examiner's mark (seal, stamp, now-line). It is never a background area, never decoration, never a second brand colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ink Rule",
+        "body": "Everything else is ink on bond in three dilutions. No other hues, no gradients, no tinted panels. Lighter tone inside a figure comes from hatch density or from opacity on grid, ghost and projection lines, never from a new grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Old Standard TT letters the drawing (titles, labels, numerals, controls); Source Serif 4 writes the report (every paragraph); Courier Prime speaks for the machine (readouts, logs, dates, stamps). A paragraph is never set in the display or the mono face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracked Capitals Rule",
+        "body": "Old Standard TT capitals are always letterspaced: 0.055em on the name, 0.07em on sheet titles, 0.15em on controls, up to 0.18em on the smallest field labels. Sentence-case titles stay near 0.01em. Running text is never set in capitals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Numbers that count or align (the sheet counter, reference-list numbers, paragraph numbers, readouts, the boot percentage) use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled Cell Rule",
+        "body": "Regions are separated by rules, never by gaps, cards or tinted panels: 0.75px between cells inside a sheet, 1.5px between sheets. A new region is a new cell of the same sheet.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Nothing floats. box-shadow draws rules, never elevation; depth inside a figure comes from occlusion order and shading lines.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Interface shapes have square corners. A curve on screen is either a drawn object or a leader line.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Line Convention Rule",
+        "body": "Continuous lines are visible edges. Dashed lines are hidden, returning or ghosted things. Chain lines (long, short) are axes and targets. Dotted lines are grids and prior series. A new figure keeps these meanings.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Hatch Rule",
+        "body": "Inside a figure, tone comes only from 45° hatching at the three densities. Solid fills are Bond (to occlude) or ink and carmine at dot scale (arrowheads, end dots, the \"today\" point).",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do draw every new illustration as an SVG patent figure with the shared primitives: 0.34 isometric ellipses, right-weighted shading, curved leaders to numerals, the line conventions and the three hatch densities.",
+      "Do give every part the text mentions a reference numeral, and wire its figure numeral, list entry and inline numeral to the same exam state.",
+      "Do separate regions with 0.75px ink rules and sheets with 1.5px rules, and close each sheet with its boxed \"FOLHA n DE N\" mark, counted to the same total as the strip.",
+      "Do use the ink button for the single primary action in a group and outline buttons for the rest; hover turns the ring carmine, never the fill.",
+      "Do keep paragraphs in Source Serif 4 at 1.0625rem/1.65 within 58 to 70ch, and letterspace every Old Standard TT capital.",
+      "Do stamp any metric-looking figure \"DADOS FICTÍCIOS\" in carmine Courier Prime.",
+      "Do drive scroll-linked figures from the native scroll position, and give every continuous animation a paused and a reduced-motion state that shows the finished drawing."
+    ],
+    "donts": [
+      "Don't build the category default: a dark hero with neon, or a grid of project cards.",
+      "Don't use carmine for areas, decoration or emphasis that is neither a state nor an examiner's mark.",
+      "Don't add hues, gradients, tinted panels or a page dark theme; the Fig. 6 inversion stays inside that figure.",
+      "Don't round interface corners or add drop shadows; box-shadow only draws rules.",
+      "Don't fill figure areas with solid ink or grey; tone is 45° hatching. Solid ink stays correct for the primary button, the CV cell and arrowheads.",
+      "Don't set paragraphs in Old Standard TT or Courier Prime, or running text in capitals.",
+      "Don't use emoji or icon fonts; icons are inline 16-unit SVG stroked at 1.25 with square caps and miter joins.",
+      "Don't hijack wheel or keyboard scrolling.",
+      "Don't reveal sheets or content blocks with a standalone fade; entrances are drawn, slid or stamped, and opacity only accompanies them."
+    ]
+  }
+}

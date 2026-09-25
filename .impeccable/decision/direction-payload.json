@@ -1,0 +1,119 @@
+{
+  "title": "Escolha o mundo visual do portfólio",
+  "question": "O sorteio designou o Terminal de mercado. Fique com ele, escolha uma alternativa ou sorteie de novo. Esperando no próximo sorteio: parede de locadora VHS, manual de montagem de blocos e bacia de tinta suminagashi.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Terminal de mercado",
+      "kicker": "THE ROLL",
+      "lineage": "Terminais financeiros (Bloomberg, 1982→): linha de comando, funções <GO>, painéis densos",
+      "thesis": "O recrutador digita THIAGO DINIZ <GO> e o terminal abre a ficha, como se você fosse um ativo em análise.",
+      "palette": ["#000000", "#FFA028", "#F4F4F0", "#F7D117", "#1FB45A", "#D8332A"],
+      "materials": ["tela preta de alto contraste", "teclado de funções amarelo, verde e vermelho", "fita de cotações correndo"],
+      "viewport": "Linha de comando âmbar no topo digitando THIAGO DINIZ <GO>. À esquerda, o nome em scramble e a ficha DES: cargo, base, stack, em produção desde 2023. À direita, o menu numerado (1 EXP, 2 CASE, 3 STK, 4 CV, 5 MSG). No rodapé, a fita e a linha do tempo.",
+      "risk": "Pode ler como fantasia de finanças; preto com âmbar fica perto do visual dev dark que o site já tem.",
+      "raised": [
+        { "from": "challenger-six-pack", "raise": "Todo movimento é amortecido e físico, nunca salta; cada painel mostra trajetória, não só um valor." },
+        { "from": "challenger-ribbon", "raise": "Uma linha do tempo contínua e datada (UEPB → estágio → júnior → pleno → hoje) atravessa todas as funções, e o scroll anda por ela." }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "linha de comando <GO>", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+          { "label": "nome + ficha DES", "x": 0, "y": 1, "w": 7, "h": 6 },
+          { "label": "menu de funções 1–5", "x": 7, "y": 1, "w": 5, "h": 6 },
+          { "label": "painel ao vivo (simulação rotulada)", "x": 0, "y": 7, "w": 12, "h": 2 },
+          { "label": "fita + linha do tempo", "x": 0, "y": 9, "w": 12, "h": 1, "accent": true }
+        ]
+      }
+    },
+    {
+      "id": "model-pick",
+      "label": "Painel de partidas",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Painéis split-flap (Solari) de aeroportos e estações",
+      "thesis": "O site é um saguão de embarque: cada camada e cada case é uma partida, e o scramble do nome vira flaps de verdade.",
+      "palette": ["#111214", "#F3F1EA", "#C9CDD2", "#F2B233", "#E0483A"],
+      "materials": ["flaps pretos foscos com letra pintada", "moldura de aço escovado", "lâmpadas âmbar de atraso"],
+      "viewport": "O painel ocupa a tela: THIAGO DINIZ em flaps; abaixo, as linhas de partida (INTERFACE · PORTÃO 01 · NO HORÁRIO…). Clicar numa linha embarca naquela seção.",
+      "risk": "Split-flap é um efeito comum em portfólios de dev: familiar e eficaz, não inédito. É o topo da minha lista.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "cabeçalho do saguão", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "THIAGO DINIZ em flaps", "x": 0, "y": 1, "w": 12, "h": 3, "accent": true },
+          { "label": "linhas de partida (seções/cases)", "x": 0, "y": 4, "w": 12, "h": 5 },
+          { "label": "CV · contato", "x": 8, "y": 9, "w": 4, "h": 1, "accent": true }
+        ]
+      }
+    },
+    {
+      "id": "challenger-patent",
+      "label": "Prancha de patente",
+      "verdict": "wins",
+      "lineage": "Folhas de desenho de patente de utilidade: nanquim, numerais de referência, vista explodida",
+      "thesis": "Sua stack registrada como invenção: a Fig. 1 monta o sistema do pixel ao deploy e explode camada por camada no scroll.",
+      "palette": ["#FAFAF7", "#161616", "#B3202A", "#9A9A94"],
+      "materials": ["nanquim sobre papel bond", "hachura como único preenchimento", "carmim só no que está em exame", "selo datado"],
+      "viewport": "Folha com moldura e carimbo. À esquerda, o título 'Sistema e método para entregar software do pixel ao deploy', o inventor THIAGO DINIZ em scramble e os botões 'Ver Fig. 2 explodida' e 'Baixar CV'. À direita, a Fig. 1 montada e a coluna de numerais (10 Interface, 20 Aplicação…).",
+      "case": "Funde limpo: camadas viram peças numeradas, cases viram figuras de detalhe, contato vira 'reivindicações'. Vence nos dois eixos: engenharia séria é reconhecível por recrutador e tech lead, e uma folha clara lê melhor que um terminal denso.",
+      "risk": "Exige figuras SVG desenhadas com muita qualidade; traço amador vira paródia.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-patent-drawing-sheet-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/notation-diagram-systems-patent-drawing-sheet.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "moldura + carimbo", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "inventor / datas", "x": 0, "y": 1, "w": 2, "h": 8 },
+          { "label": "título + CTA", "x": 2, "y": 1, "w": 4, "h": 5 },
+          { "label": "Fig. 1 (explode no scroll)", "x": 6, "y": 1, "w": 4, "h": 6, "accent": true },
+          { "label": "numerais de referência", "x": 10, "y": 1, "w": 2, "h": 6 },
+          { "label": "figuras / cases / documentos", "x": 2, "y": 7, "w": 10, "h": 3 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-six-pack",
+      "label": "Painel de voo noturno",
+      "verdict": "declined",
+      "lineage": "Os seis instrumentos básicos de um cockpit à noite",
+      "thesis": "Seis instrumentos, um por camada, que o olho cruza num ritual de verificação.",
+      "palette": ["#0B0D0E", "#E9EDE6", "#7CFFB0", "#F2A93B", "#D9412E"],
+      "materials": ["painel preto fosco", "marcação luminosa", "agulhas com amortecimento"],
+      "viewport": "Seis mostradores em 2×3, um por camada, com o nome e o CTA à esquerda.",
+      "case": "Funde mal: mostradores pedem valores, e o site não tem métricas reais para exibir sem inventar.",
+      "kept": "Movimento amortecido e físico; trajetória além do valor.",
+      "risk": "Seriam as velhas 'barras de skill' com outra roupa.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp"
+    },
+    {
+      "id": "challenger-ribbon",
+      "label": "Fita de proveniência",
+      "verdict": "declined",
+      "lineage": "Registros de proveniência de museu",
+      "thesis": "Uma fita vermelha contínua leva a carreira por dobras datadas.",
+      "palette": ["#E9DFCB", "#2A2521", "#A31F24", "#8E8A82"],
+      "materials": ["papel de arquivo", "fita de seda", "carimbos de tinta"],
+      "viewport": "A fita desce à direita, com cada dobra datada: UEPB → MarjoSports 2023 → Lifters 2024 → hoje.",
+      "case": "Funde bem para a carreira, mas recrutador de tech não se reconhece num mundo de museu, e a stack não cabe na fita.",
+      "kept": "Uma linha contínua e datada carrega a cronologia do começo ao fim.",
+      "risk": "Elegante, mas sem nada de engenharia.",
+      "hero": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "label": "Padrão da categoria (identidade atual)",
+    "thesis": "Mantém o mundo atual (papel claro descendo ao escuro, Archivo, azul e verde) e leva o conceito da requisição ao máximo.",
+    "palette": ["#F4F6FA", "#05070C", "#2A52F2", "#7E9BFF", "#19E388"],
+    "materials": ["fundo que escurece com o scroll", "mono técnico", "pulsos com brilho"],
+    "viewport": "O hero atual refinado; uma linha contínua de requisição desce pela página até o 200 OK.",
+    "risk": "É o visual que a maioria dos portfólios de dev já usa; o diferencial fica só no acabamento."
+  },
+  "steer": true
+}
